@@ -1,4 +1,4 @@
-const baseURL = 'demo.magic-portfolio.com'
+const baseURL = 'portfolio-erebus.vercel.app/'
 
 // Enable localization
 const i18n = false;
@@ -14,7 +14,6 @@ const routes = {
     '/about':   true,
     '/work':    true,
     '/blog':    true,
-    '/gallery': true,
 }
 
 // Enable password protection on selected routes

@@ -2,15 +2,15 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Zaid',
+        lastName:  'Shah',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        location:  'Asia/Pakistan',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        languages: ['English', 'Urdu']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -25,12 +25,12 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/Erebus9456',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
+            link: 'https://www.linkedin.com/in/muhammad-zaid-husssain-shah/',
         },
         {
             name: 'X',
@@ -40,7 +40,7 @@ const createI18nContent = (t) => {
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:zaid9456@gmail.com',
         },
     ]
 
@@ -77,10 +77,10 @@ const createI18nContent = (t) => {
             title: t("about.work.title"),
             experiences: [
                 {
-                    company: 'FLY',
-                    timeframe: t("about.work.experiences.FLY.timeframe"),
-                    role: t("about.work.experiences.FLY.role"),
-                    achievements: t("about.work.experiences.FLY.achievements").split(";"),
+                    company: 'ARC',
+                    timeframe: t("about.work.experiences.ARC.timeframe"),
+                    role: t("about.work.experiences.ARC.role"),
+                    achievements: t("about.work.experiences.ARC.achievements").split(";"),
                     images: [ // optional: leave the array empty if you don't want to display images
                         {
                             src: '/images/projects/project-01/cover-01.jpg',
@@ -91,10 +91,10 @@ const createI18nContent = (t) => {
                     ]
                 },
                 {
-                    company: 'Creativ3',
-                    timeframe: t("about.work.experiences.Creativ3.timeframe"),
-                    role: t("about.work.experiences.Creativ3.role"),
-                    achievements: t("about.work.experiences.Creativ3.achievements").split(";"),
+                    company: 'Freelancer',
+                    timeframe: t("about.work.experiences.Freelancer.timeframe"),
+                    role: t("about.work.experiences.Freelancer.role"),
+                    achievements: t("about.work.experiences.Freelancer.achievements").split(";"),
                     images: [ ]
                 }
             ]
@@ -104,13 +104,9 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
+                    name: 'InformationTechnologyUniversity',
+                    description: <>{t(`about.studies.institutions.InformationTechnologyUniversity.description`)}</>,
                 },
-                {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
-                }
             ]
         },
         technical: {
@@ -118,8 +114,8 @@ const createI18nContent = (t) => {
             title: t("about.technical.title"),
             skills: [
                 {
-                    title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
+                    title: 'App-Development',
+                    description: <>{t("about.technical.skills.App-Development.description")}</>,
                     images: [
                         {
                             src: '/images/projects/project-01/cover-02.jpg',
@@ -136,8 +132,8 @@ const createI18nContent = (t) => {
                     ]
                 },
                 {
-                    title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
+                    title: 'AI',
+                    description: <>{t("about.technical.skills.AI.description")}</>, // "." not accepted in next-intl namespace
                     images: [
                         {
                             src: '/images/projects/project-01/cover-04.jpg',
@@ -145,6 +141,12 @@ const createI18nContent = (t) => {
                             width: 16,
                             height: 9
                         },
+                    ]
+                },
+                {
+                    title: 'Automation',
+                    description: <>{t("about.technical.skills.Automation.description")}</>, // "." not accepted in next-intl namespace
+                    images: [
                     ]
                 }
             ]
@@ -168,6 +170,7 @@ const createI18nContent = (t) => {
     }
 
     const gallery = {
+        display: false,
         label: t("gallery.label"),
         title: t("gallery.title"),
         description: t("gallery.description", {name: person.name}),
