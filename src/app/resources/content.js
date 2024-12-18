@@ -9,7 +9,7 @@ const person = {
     },
     role:      'Software Engineer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Pakistan',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    location:  'Asia/Karachi',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Urdu']  // optional: Leave the array empty if you don't want to display languages
 }
 
@@ -85,12 +85,7 @@ const about = {
                     <>Spearheaded the integration of AI tools into design workflows, enabling developers to iterate over solutions faster.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
+                  
                 ]
             },
             {
@@ -122,7 +117,7 @@ const about = {
         skills: [
             {
                 title: 'App Development',
-                description: <>Able to create cross platform apps (Android / iOS / MacOS / Windows / Linux.</>,
+                description: <>Able to create cross platform apps (Android / iOS / MacOS / Windows / Linux).</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
@@ -137,6 +132,12 @@ const about = {
                         width: 16,
                         height: 9
                     },
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
                 ]
             },
             {
@@ -144,12 +145,7 @@ const about = {
                 description: <>Building next gen apps with AI. Using APIs for simpler workloads and custom solutions for complex workloads</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
+                 
                 ]
             },
             {
@@ -172,6 +168,7 @@ const blog = {
 }
 
 const work = {
+    display:false,
     label: 'Work',
     title: 'My projects',
     description: `Dev projects by ${person.name}`
