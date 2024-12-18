@@ -1,6 +1,6 @@
 # **Build your portfolio with Once UI's Magic Portfolio**
 
-View the [demo here](https://demo.magic-portfolio.com).
+View the [demo here](https://portfolio-erebus.vercel.app/).
 
 ![Magic Portfolio](public/images/cover.png)
 
@@ -62,20 +62,6 @@ Add a new .mdx file to src/app/[locale]/blog/posts or src/app/[locale]/work/proj
 ## **Localization (NEW)**
 - Magic Portfolio now supports localization with the next-intl library
 - See more info in resources/config.js
-
-# **Authors**
-
-Connect with us on Threads or LinkedIn.
-
-Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
-
-Localization added by [François Hernandez](https://github.com/francoishernandez)
-
-# **Get involved**
-
-- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
 
 # **License**
 
